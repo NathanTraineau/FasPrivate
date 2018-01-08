@@ -1,0 +1,12 @@
+il faut savoir si possible de se connecter sur raspberry depuis tkinter, faire la procédure de connexion sans que l'utilisateur n'ait à toucher à un terminal.
+
+Hyp1 (priviliégiée):
+L'application sera sur tkinter sur le raspberry et on lancera des scripts depuis cette application
+Dans l'idée faire une appli qui affiche
+
+Hyp2 :
+Ou sinon une appli tkinter sur l'ordi qui env des commandes / exécute des fichiers sur le raspberry ca a l'air d'être compliqué.
+
+Hyp3 : Si trop compliqué de lancer des scripts comme ça Faire l'application en ligne de commande sur le raspberry et lancer à la fin l'affichage en tkinter des stats
+
+
