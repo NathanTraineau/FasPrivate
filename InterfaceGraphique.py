@@ -3,6 +3,7 @@
 
 from Entrainements.Entrainements import *
 from tkinter import *
+from statistiques.Statistiques import *
 
 
 #Exemple de code tkinter : 
@@ -26,7 +27,7 @@ class Interface(Frame):
         self.bouton_quitter.pack(side="left")
         
         self.bouton_manuel = Button(self, text="Manuel D'utilisation", fg="red",
-                command=self.entrainement1)
+                command=self.Manuel)
         self.bouton_manuel.pack(padx=10, pady = 10)
 
         self.bouton_entrainement1 = Button(self, text="entrainement 1", fg="red",
@@ -34,20 +35,43 @@ class Interface(Frame):
         self.bouton_entrainement1.pack(padx=10, pady = 10)
 
         self.bouton_entrainement2 = Button(self, text="entrainement 2", fg="red",
-                command=self.entrainement1)
+                command=self.entrainement2)
         self.bouton_entrainement2.pack(padx=10, pady = 10)
 
         self.bouton_entrainement3 = Button(self, text="entrainement 3", fg="red",
-                command=self.entrainement1)
+                command=self.entrainement3)
         self.bouton_entrainement3.pack(padx=10, pady = 10)
 
     
+    def Manuel(self):
+
+        Manuel.txt
     def entrainement1(self):
         """Il y a eu un clic sur le bouton.
         
         On change la valeur du label message."""
         
-        entrainement1()
+        en = entrainement1()
+        AffStatistiques(en)
+        return 0
+
+    def entrainement2(self):
+        """Il y a eu un clic sur le bouton.
+        
+        On change la valeur du label message."""
+        
+        en = entrainement2()
+        AffStatistiques(en)
+        return 0
+
+    def entrainement3(self):
+        """Il y a eu un clic sur le bouton.
+        
+        On change la valeur du label message."""
+        
+        en = entrainement3()
+        AffStatistiques(en)
+        return 0
         
 
 

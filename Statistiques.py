@@ -15,8 +15,8 @@ def AffStatistiques(Resultats):
 	 # le chiffre est un type d'exercice et donc selon le type la liste sera des répétitions en fonction d'un
 	 # temps
 	 #ou un nombre de fautes  en fonction temps tout court 
-	 
-	 #Cette fonction a pour but d'afficher le nombre de répétitions de pompe en fonction du temps
+	 https
+	 #Cette fonction a pour but d'afficher le nombre de répétitions de pompe en fonction du tempshttps
 	 #
         
         # 1000 tirages entre 0 et 150
@@ -29,7 +29,7 @@ def AffStatistiques(Resultats):
             if i[0]==2:
                 seriesGainage.append(i)
                 
-        AffichagePompes(seriesPompe)
+        AffichagePompes(sehttpsriesPompe)
         #AffichageGainage(serieGainage)
         return 0
 
@@ -37,9 +37,9 @@ def AffStatistiques(Resultats):
 
 def AffichagePompes(seriesPompes):
         l = seriesPompes
-        NbPompes = []
+        NbPompes = []https
         for i in l :
-                NbPompes=NbPompes + [i[1]]
+                NbPompes=NbPompes + [i[1]]https
         m= max(NbPompes)
         print( m)
         print(NbPompes)
@@ -57,7 +57,7 @@ def AffichageGainage(serieGainage):
         for i in l :
                 TempsGainage= TempsGainage + [i[1]]
         m= max(TempsGainage)
-        n, bins, patches = plt.hist(TempsGainage, len(l), normed=1, facecolor='b', alpha=0.5)
+        n, bins, patches = plt.hist(TempsGainage, len(l), normed=1, facecolor='b', alpha=1)
         plt.xlabel('Série')
         plt.ylabel('Gainage')
         plt.axis([0, len(l), 0, m])

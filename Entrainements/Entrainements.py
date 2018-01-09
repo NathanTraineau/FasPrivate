@@ -237,6 +237,18 @@ def entrainement1():
         #Global Fin marche t'elle ?
            if Fin :
                    break
+           pompes2 = ComptePompe()
+           if Fin :
+                   
+                   break
+           ResultatsEntrainement = ResultatsEntrainement +[(1,pompes2,0)]
+           
+           tempsPause = pause()
+          
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           if Fin :
+                   break
         # Fin Vérif
         
            gainage1 = ChronoGainage()
@@ -245,13 +257,21 @@ def entrainement1():
         #Vérif si l'util veut arrêter ou pas
            if Fin :
                    break
+           tempsPause = pause()
+           if Fin :
+                   break 
+           gainage1 = ChronoGainage()
+           ResultatsEntrainement = ResultatsEntrainement +[(2,gainage1,tempsPause)]
+        #pause()
+        #Vérif si l'util veut arrêter ou pas
+           if Fin :
+                   break 
         #pompes2 = ComptePompe( mesures[0])
         #ResultatsEntrainement = ResultatsEntrainement +[(1,pompes2,tempsPause)]
         #tempsPause = pause()
         #Vérif si l'util veut arrêter ou pas
         #Global Fin marche t'elle ?
-           if Fin :
-                   break
+           
         # Fin Vérif
 
            return ResultatsEntrainement
@@ -263,10 +283,158 @@ def entrainement1():
         
 
 
+def entrainement2():
+    #Procédure de l'entrainement 1
+    #AffichageDebut()
+    global mesures
+    mesures = PrisesDesMesures()
+    Affichage("On va commencer l'entrainement")
+    time.sleep(4)
+    global Fin
+    ResultatsEntrainement = []
+    while True  :
+           if Fin :
+                   
+                   break
+           pompes1 = ComptePompe()
+           if Fin :
+                   
+                   break
+           ResultatsEntrainement = ResultatsEntrainement +[(1,pompes1,0)]
+           
+           tempsPause = pause()
+          
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           if Fin :
+                   break
+           tempsPause = pause()
+           if Fin :
+                   break 
+           gainage1 = ChronoGainage()
+           ResultatsEntrainement = ResultatsEntrainement +[(2,gainage1,tempsPause)]
+        #pause()
+        #Vérif si l'util veut arrêter ou pas
+           if Fin :
+                   break  
+           pompes2 = ComptePompe()
+           if Fin :
+                   
+                   break
+           ResultatsEntrainement = ResultatsEntrainement +[(1,pompes2,0)]
+           
+           tempsPause = pause()
+          
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           if Fin :
+                   break
+        # Fin Vérif
+        
+           gainage1 = ChronoGainage()
+           ResultatsEntrainement = ResultatsEntrainement +[(2,gainage1,tempsPause)]
+        #pause()
+        #Vérif si l'util veut arrêter ou pas
+           if Fin :
+                   break
+           tempsPause = pause()
+           if Fin :
+                   break 
+           gainage1 = ChronoGainage()
+           ResultatsEntrainement = ResultatsEntrainement +[(2,gainage1,tempsPause)]
+        #pause()
+        #Vérif si l'util veut arrêter ou pas
+           if Fin :
+                   break 
+        #pompes2 = ComptePompe( mesures[0])
+        #ResultatsEntrainement = ResultatsEntrainement +[(1,pompes2,tempsPause)]
+        #tempsPause = pause()
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           
+        # Fin Vérif
 
+           return ResultatsEntrainement
+    Affichage("Fin d'entrainement au revoir")
+    time.sleep(5)
+    Affichage("Regardez vos stats à l'ecran")
+    
+    return ResultatsEntrainement
+
+
+
+
+def entrainement3():
+    #Procédure de l'entrainement 1
+    #AffichageDebut()
+    global mesures
+    mesures = PrisesDesMesures()
+    Affichage("On va commencer l'entrainement")
+    time.sleep(4)
+    global Fin
+    ResultatsEntrainement = []
+    while True  :
+           if Fin :
+                   
+                   break
+           pompes1 = ComptePompe()
+           if Fin :
+                   
+                   break
+           ResultatsEntrainement = ResultatsEntrainement +[(1,pompes1,0)]
+           
+           tempsPause = pause()
+          
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           if Fin :
+                   break
+           pompes2 = ComptePompe()
+           if Fin :
+                   
+                   break
+           ResultatsEntrainement = ResultatsEntrainement +[(1,pompes2,0)]
+           
+           tempsPause = pause()
+          
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           if Fin :
+                   break
+        # Fin Vérif
+        
+           gainage1 = ChronoGainage()
+           ResultatsEntrainement = ResultatsEntrainement +[(2,gainage1,tempsPause)]
+        #pause()
+        #Vérif si l'util veut arrêter ou pas
+           if Fin :
+                   break
+           tempsPause = pause()
+           if Fin :
+                   break 
+           gainage1 = ChronoGainage()
+           ResultatsEntrainement = ResultatsEntrainement +[(2,gainage1,tempsPause)]
+        #pause()
+        #Vérif si l'util veut arrêter ou pas
+           if Fin :
+                   break 
+        #pompes2 = ComptePompe( mesures[0])
+        #ResultatsEntrainement = ResultatsEntrainement +[(1,pompes2,tempsPause)]
+        #tempsPause = pause()
+        #Vérif si l'util veut arrêter ou pas
+        #Global Fin marche t'elle ?
+           
+        # Fin Vérif
+           return ResultatsEntrainement
+           
+    Affichage("Fin d'entrainement au revoir")
+    time.sleep(5)
+    Affichage("Regardez vos stats à l'ecran")
+    
+    return ResultatsEntrainement
 #Main  
 
-def main():
+def mainDeSecours():
     fin = "n"
     while fin !="o":
         #Invariant de boucle : fin différent de o
